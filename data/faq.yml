@@ -1,0 +1,55 @@
+version: "2.0"
+
+nlu:
+  - intent: faq_address
+    examples: |
+      - Where is the college located?
+      - May I know the college address?
+      - Can you share college address?
+      - please share college address?
+      - pls share college address?
+      - can u share college address?
+      - may i know where is college located?
+      - college address
+      - college located
+  - intent: faq_admission
+    examples: |
+      - When will the admission form come?
+      - When will the admission process start?
+      - What is the tentative date of admission process?
+      - admission start date
+      - may i know when admission starts?
+      - admission form
+      - when can i get admission form
+
+  - intent: faq_eligibility
+    examples: |
+      - What is the eligibility criteria? 
+      - who can apply for the admission process?
+      - Are diploma students eligible?
+      - eligibility criteria
+      - eligibility criteria to apply admission process
+      - qualification for admission
+      - diploma students can apply for admission
+
+  - intent: faq_fee
+    examples: |
+      - What is fees of first year?
+      - may i know the fee structure?
+      - How much is the fee for first year?
+      - Is there any installment facilities?
+      - may i know fee details for admission?
+      - how much amount I have to pay for admission?
+
+  - intent: faq_hostel
+    examples: |
+      - Is there any hostel facility provided by the college?
+      - What about the accommodation of students who are not from Nagpur?
+      - Is there any hostel facility provided by the college?
+      - is accommodation provided by the college?
+      - is hostel facility available?
+      - is boys hostel available?
+      - is girls hostel available?
+      - is accommodation available for girls?
+      - is accommodation available for boys?
+

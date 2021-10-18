@@ -1,0 +1,57 @@
+version: "2.0"
+
+stories:
+  - story: happy path
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_great
+      - action: utter_happy
+
+  - story: sad path 1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_happy
+
+  - story: sad path 2
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: deny
+      - action: utter_goodbye
+
+  - story: happy path faq
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: faq_address
+      - action: utter_faq_address
+      - action: utter_faq_address_link
+
+  - story: faq admission
+    steps:
+      - intent: faq_admission
+      - action: utter_faq_admission
+
+  - story: faq eligibility
+    steps:
+      - intent: faq_eligibility
+      - action: utter_faq_eligibility
+
+  - story: faq_fee
+    steps:
+      - intent: faq_fee
+      - action: utter_faq_fee
+
+  - story: faq_hostel
+    steps:
+      - intent: faq_hostel
+      - action: utter_faq_hostel
