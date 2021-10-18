@@ -1,0 +1,57 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - faq_address
+  - faq_admission
+  - faq_eligibility
+  - faq_fee
+  - faq_hostel
+
+responses:
+  utter_greet:
+    - text: "Hey! How are you?"
+
+  utter_cheer_up:
+    - text: "Here is something to cheer you up:"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+    - text: "Did that help you?"
+
+  utter_happy:
+    - text: "Great, carry on!"
+
+  utter_goodbye:
+    - text: "Bye"
+
+  utter_iamabot:
+    - text: "I am a bot, powered by Rasa."
+
+  utter_faq_address:
+    - text: "Shri Ramdeobaba College of Engineering and Management , Gittikhadan, Nagpur 440013"
+  utter_faq_address_link:
+    - text: "Please click this link for more details. [https://www.google.com/](https://www.google.com/)."
+
+  utter_faq_admission:
+    - text: "1st week of August"
+
+  utter_faq_eligibility:
+    - text: "Students passing 12th/Diploma are eligible"
+  
+  utter_faq_fee:
+    - text: " 140000 to be paid at the time of admission( no installments)"
+  
+  utter_faq_hostel:
+    - text: "Yes college has Hostel and Mess facility for both girls and boys"
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
